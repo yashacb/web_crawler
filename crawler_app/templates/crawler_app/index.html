@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Index</title>
+</head>
+<body>
+{{ error }}
+<h1>Enter the keyword to search</h1>
+<form method = "POST" action = "{% url 'main' %}" >
+  {% csrf_token %}
+  {{ form }}
+  <input type = "submit" name = "search" value = "Search" />
+</form>
+</body>
+</html>
