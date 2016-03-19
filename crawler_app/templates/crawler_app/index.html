@@ -8,7 +8,9 @@
 <h1>Enter the keyword to search</h1>
 <form method = "POST" action = "{% url 'main' %}" >
   {% csrf_token %}
+    <table>
   {{ form }}
+    </table>
   <input type = "submit" name = "search" value = "Search" />
 </form>
 </body>
